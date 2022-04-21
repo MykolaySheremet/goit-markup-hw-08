@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--second-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.foot-links .social__links {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-header {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-color-text);
+}
+
+.foot-links {
+    padding-top: 12px;
+}
+
+.foot-links .social__icon {
+    fill: var(--third-color-text)
+}
+
+.foot-links .social__list:not(:last-child) {
+    margin-right: 10px;
+}
+
+.foot-links .social__links:hover,
+.foot-links .social__links:focus {
+    background-color: var(--accent-color);
+}
+
+.foot-block-address {
+    display: flex;
+}
+
+.div-address {
+    margin-right: 70px;
+}

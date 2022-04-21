@@ -1,0 +1,22 @@
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-logo);
+    margin-right: 93px;
+}
+.logo--secondcolor {
+    color: var(--accent-color);
+}
+.logo-foot {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--third-color-text);
+    display: block;
+    margin-bottom: 20px;
+}

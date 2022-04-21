@@ -1,0 +1,53 @@
+.signform {
+    margin-left: auto;
+    padding-top: 12px;
+}
+
+.signform__title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-color-text);
+}
+
+.signform__emailinput {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--third-color-text);
+}
+
+.sign-btn {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    padding: 10px 28px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--third-color-text);
+    cursor: pointer;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.sign-block-email {
+    display: flex;
+    align-items: center;
+}
+
+.sign-btn__icon {
+    margin-left: 10px;
+    fill: var(--third-color-text);
+}
