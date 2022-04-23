@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/layout/-our-clients-mobile.scss"
-    ],
-    "names": [],
-    "file": "-our-clients-mobile.min.css"
-}

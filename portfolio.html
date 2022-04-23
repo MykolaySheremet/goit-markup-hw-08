@@ -18,25 +18,29 @@
 
 <body class="body">
     <header class="header">
-        <div class="header-container container">
+        <div class="header__container container">
             <nav class="navigation">
                 <a class="link logo" href="" lang="en">
-                    <span class="logo--secondcolor">Web
-                    </span>Studio
+                    <span class="logo--secondcolor">Web</span>Studio
                 </a>
                 <ul class="list navigation-list">
                     <li class="navigation-list__item">
                         <a class="link navigation-list__link " href="./index.html">Студия</a>
                     </li>
                     <li class="navigation-list__item">
-                        <a class="link navigation-list__link navigation-list__link--active" href="./portfolio.html">Портфолио</a>
+                        <a class="link navigation-list__link navigation-list__link--active" href="">Портфолио</a>
                     </li>
                     <li class="navigation-list__item">
                         <a class="link navigation-list__link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list header-container">
+            <button class="button-mobile-menu" type="button" data-menu-open>
+                <svg class="button-mobile-menu__icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu-but-mobile"></use>
+                </svg>
+            </button>
+            <ul class="list heder-mobile-contacts">
                 <li class="nav-contacts">
                     <div class="header-contacts">
                         <a class="link header-contacts__link" href="mailto:info@devstudio.com">
@@ -59,8 +63,54 @@
                 </li>
             </ul>
         </div>
+    
+        <div data-menu class="mobile-menu">
+            <div class="container mobile-container">
+                <button data-menu-close class="mobile-menu__close-button" type="button">
+                    <svg class="mobile-menu__icon-button" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-close-btn-mobile"></use>
+                    </svg>
+                </button>
+                <ul class="list mobile-pages">
+                    <li class="mobile-pages__item">
+                        <a class="link  mobile-pages__link " href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-pages__item">
+                        <a class="link mobile-pages__link mobile-pages__link--active" href="">Портфолио</a>
+                    </li>
+                    <li class="mobile-pages__item">
+                        <a class="link mobile-pages__link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="list modile-page-contacts">
+                    <li class="modile-page-contacts__item">
+                        <a class="link modile-page-contacts__link modile-page-contacts__link--tel"
+                            href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="modile-page-contacts__item">
+                        <a class="link modile-page-contacts__link modile-page-contacts__link--mail"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="list mobile-page-social-list">
+                    <li class="mobile-page-social-list__item">
+                        <a class="link mobile-page-social-list__link" href="">Instagram</a>
+                    </li>
+                    <li class="mobile-page-social-list__item">
+                        <a class="link mobile-page-social-list__link " href="">Twitter</a>
+                    </li>
+                    <li class="mobile-page-social-list__item">
+                        <a class="link mobile-page-social-list__link " href="">Facebook</a>
+                    </li>
+                    <li class="mobile-page-social-list__item">
+                        <a class="link mobile-page-social-list__link mobile-page-social-list__linkend  "
+                            href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-
+    
     <main>
         <section class="section">
             <div class="container">
@@ -288,8 +338,9 @@
             </form>
         </div>
     </footer>
+    
 
-
+    <script src="./js/menu.js"></script>
 </body>
 
 

@@ -4,14 +4,15 @@
 @import './base/common';
 @import './base/container';
 
-@import './layout/header-mobile';
+@import './layout/header';
 @import './layout/hero-mobile';
 @import './layout/advantages-mobile';
 @import './layout/our-products-mobile';
 @import './layout/employees-mobile';
 @import './layout/our-clients-mobile';
 
-@import './components/logo-mobile';
+@import './components/mobile-menu';
+@import './components/logo';
 @import './components/social-list-mobile';
 
 // @import './base/_common';
