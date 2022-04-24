@@ -1,6 +1,5 @@
-.signform {
-    margin-left: auto;
-    padding-top: 12px;
+.signform{
+    text-align: center;
 }
 
 .signform__title {
@@ -12,26 +11,47 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--third-color-text);
+
+    @media screen and(min-width: 1200px) {
+        text-align: left;
+        padding-top: 12px;
+    }
 }
 
 .signform__emailinput {
-    width: 358px;
+    // display: flex;
+    // justify-content: center;
     height: 50px;
     padding: 15px 16px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
     color: var(--third-color-text);
+
+    @media screen and(max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and(max-width: 480px) {
+        width: 100%;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 0;
+        width: 358px;
+    }
 }
 
 .sign-btn {
     display: flex;
+    justify-content: center;
     align-items: center;
     min-width: 200px;
-    padding: 10px 28px;
-    margin-left: 12px;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--third-color-text);
@@ -40,12 +60,25 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+
+    @media screen and(min-width: 1200px) {
+        margin-left: 12px;
+    }
+
 }
 
-.sign-block-email {
-    display: flex;
-    align-items: center;
+.sign-block-email{
+    @media screen and(min-width: 1200px) {
+        display: flex;
+    }
 }
+
 
 .sign-btn__icon {
     margin-left: 10px;
