@@ -6,16 +6,23 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
     &.is-hidden {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
         transform: scale(0.9);
     }
+
     @media screen and(max-width: 479px) {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 93px;
+        overflow: auto;
+        display: block;
+        z-index: 52;
+
     }
 }
 
@@ -29,10 +36,10 @@
     background-color: var(--third-color-text);
     padding: 40px;
 
-    // @media screen and(max-width: 479px) {
-    //     width: 100%;
+    @media screen and(max-width: 479px) {
+        width: 100%;
         
-    // }
+    }
 
     @media screen and(min-width: 1200px) {
         width: 528px;
