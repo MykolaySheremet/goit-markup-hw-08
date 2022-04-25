@@ -646,6 +646,7 @@ address {
 @media screen and (min-width: 1200px) {
   .foot-address {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -869,6 +870,7 @@ address {
   .logo-foot {
     font-size: 26px;
     line-height: 1.19;
+    text-align: left;
   }
 }
 
