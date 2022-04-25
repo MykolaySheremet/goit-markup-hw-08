@@ -37,9 +37,10 @@
     padding: 40px;
 
     @media screen and(max-width: 479px) {
-        width: 100%;
-        
-    }
+        width: 290px;
+        padding-left: 12px;
+        padding-right: 12px;
+        }
 
     @media screen and(min-width: 1200px) {
         width: 528px;

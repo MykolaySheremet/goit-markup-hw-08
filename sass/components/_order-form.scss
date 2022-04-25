@@ -133,6 +133,11 @@
         line-height: 1.71;
     }
 
+    @media screen and(max-width: 479px) {
+        margin-left: 5px;
+    }
+
+
     &::before {
         display: inline-block;
         content: "";
@@ -143,7 +148,12 @@
         border-radius: 4px;
         cursor: pointer;
         transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and(max-width: 479px) {
+            width: 20px;
+        }
     }
+
     .section-agriment__checkbox:checked + &::before {
         background-color: var(--accent-color);
         border: solid 1px var(--accent-color);
