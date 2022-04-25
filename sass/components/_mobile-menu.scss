@@ -109,40 +109,11 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    padding-right: 10px;
-
 }
 
 .mobile-page-social-list__item:not(:last-child) {
+    padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-right: 10px;
     
-}
-
-
-// @media screen and(max-width: 479px) {
-//     .mobile-page-social-list__item{
-//         border-right: 0;
-//     }
-
-
-//     .mobile-page-social-list__item:nth-child(2n + 1) {
-//         border-right: 1px solid rgba(33, 33, 33, 0.2);
-//         margin-right: 10px;
-//         outline: solid 1px green;
-
-// }}
-
-// @media screen and(max-width: 479px) {
-//     .mobile-page-social-list__item:nth-child(2n + 1) {
-//         border-right: 1px solid rgba(33, 33, 33, 0.2);
-//         margin-right: 10px;
-//         outline: red;
-//     }
-// }
-
-
-
-.mobile-page-social-list__linkend {
-    padding: 0;
 }
