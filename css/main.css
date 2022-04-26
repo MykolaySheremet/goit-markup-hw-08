@@ -410,12 +410,12 @@ address {
 
 .second.section {
   display: none;
-  padding-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .second.section {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -896,10 +896,10 @@ address {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  overflow: auto;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 10;
 }
@@ -931,11 +931,11 @@ address {
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
 }
 
 .mobile-pages {
   margin-bottom: 302px;
-  padding-left: 25px;
 }
 
 @media screen and (max-width: 479px) {
@@ -962,7 +962,6 @@ address {
 
 .modile-page-contacts {
   margin-bottom: 64px;
-  padding-left: 25px;
 }
 
 .modile-page-contacts__item:not(:last-child) {
@@ -994,7 +993,6 @@ address {
 .mobile-page-social-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 25px;
 }
 
 .mobile-page-social-list__link {
