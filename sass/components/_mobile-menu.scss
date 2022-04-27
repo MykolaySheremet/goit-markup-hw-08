@@ -45,6 +45,10 @@
 }
 
 .mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -53,11 +57,7 @@
 }
 
 .mobile-pages {
-    margin-bottom: 302px;
-
-    @media screen  and(max-width: 479px){
-        margin-bottom: 202px ;
-    }     
+    margin-bottom: 32px;
 }
 
 .mobile-pages__link {

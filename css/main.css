@@ -260,8 +260,8 @@ address {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--second-color-text);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -269,6 +269,13 @@ address {
 
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .hero-section {
@@ -608,6 +615,12 @@ address {
   color: var(--third-color-text);
 }
 
+@media screen and (min-width: 1200px) {
+  .foot-header {
+    text-align: left;
+  }
+}
+
 .foot-links .social__links {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -713,12 +726,13 @@ address {
 .buttons-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .buttons-list {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -933,6 +947,10 @@ address {
 }
 
 .mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -940,13 +958,7 @@ address {
 }
 
 .mobile-pages {
-  margin-bottom: 302px;
-}
-
-@media screen and (max-width: 479px) {
-  .mobile-pages {
-    margin-bottom: 202px;
-  }
+  margin-bottom: 32px;
 }
 
 .mobile-pages__link {

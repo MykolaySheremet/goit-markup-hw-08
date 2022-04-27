@@ -13,6 +13,10 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--third-color-text);
+    
+    @media screen and(min-width: 1200px) {
+    text-align: left;
+    }
 }
 
 .foot-links .social__links {
